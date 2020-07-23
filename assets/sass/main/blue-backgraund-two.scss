@@ -1,0 +1,98 @@
+main{
+    .semi-poligon{
+        margin-top: 42px;
+        height: 341px;
+        clip-path: polygon(0 12.5%,100% 0%,100% 100%,0% 100%);
+        background: linear-gradient(225deg, #0000FF, #0000a3);
+        @media (min-width: 321px){
+            height: 518px;
+            clip-path: polygon(0 15%,100% 0%,100% 100%,0% 100%);
+            display: grid;
+            justify-items: center;
+           /*
+            display: flex;
+            justify-content: center;
+           */
+           
+        }
+        .question{
+            /*
+            position: absolute;
+            margin-top: 0px;
+            text-align: center;
+            */
+            
+            .ultimas-nov{
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 36px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 42px;
+                padding-top: 64px;
+            }
+            .ultimas-nov-desk{
+                display: none;
+            }
+            @media (min-width: 321px){
+                .ultimas-nov{
+                    display: none;
+                }
+               .ultimas-nov-desk{
+                    display: block;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-size: 48px;
+                    color: #FFFFFF;
+                    letter-spacing: 0;
+                    text-align: center;
+                    padding-top: 213px;
+               }
+            }
+        }
+
+        .boton2{
+            /*
+            position: absolute;
+            top: 226px;
+            left: 16px;
+            */
+            width: 288px;
+            height: 48px;
+            margin-left: 16px;
+            margin-top: 36px;
+            background-color: #00F3BB;
+            @media (min-width: 321px){
+                /*
+                left: 38%;
+                top: 311px;
+                width: 345px;
+                height: 56px;
+                */
+                margin-top: -75px;
+                width: 345px;
+                height: 56px;
+            }
+            p{
+                text-align: center;
+                padding-top: 14px;
+                font-family: 'IBM Plex Mono', monospace;
+                @media (min-width: 321px){
+                    padding-top: 18px;
+                    font-size: 18px;
+                    color: #060A24;
+                    letter-spacing: 0;
+                    text-align: center;
+                    line-height: 24px;
+                    
+                }
+            }
+            &:hover{
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                p{
+                    color: #FFFFFF;
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+
+.menu-navbar{
+        background: #FFFFFF;
+        height: 44px;
+        display: flex;
+        justify-content: space-between;
+    
+        .menu-desk{
+            display: none;
+        }
+
+        .logo {
+            position: relative;
+            padding: 10px 16px;
+            @media (min-width: 321px) {
+                top: 22px;
+                left: 100px;
+            }
+        }
+        .fa-bars{
+            padding-right: 19px;
+            padding-top: 14px;
+            @media (min-width: 321px) {
+                display: none;
+            }
+        }
+        .fa-times{
+            padding-right: 19px;
+            position: relative;
+            top: 16px;
+            @media (min-width: 321px) {
+             display: none;
+            }
+        }
+    #menu-toggle{
+        display: none;
+        &:checked{
+            + .menu{
+                top: 44px;
+            }
+        }
+    }
+
+    .menu{
+        width: 100%;
+        position: absolute;
+        background-color: blue;
+        left: 0px;
+        top: -250px;
+        list-style-type: none;
+        transition: 0.5s all;
+        padding: 0px;
+        
+        @media (min-width: 321px) {
+            display: none;
+            overflow: hidden;
+        }
+        .menu-item{
+            margin: 20.5px 0;
+            padding: 6px 12px;
+            
+            a.menu-link{
+                color: #FFFFFF;
+                text-decoration: none;
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .fa-times{
+        display: none;
+    }
+
+    #menu-toggle:checked + .menu + label .fa-bars{
+        display: none;
+       
+    }
+    #menu-toggle:checked + .menu + label .fa-times{
+        display: inline;
+        
+    }
+
+    
+    @media (min-width: 321px) {
+        .menu-desk{
+                display: flex;
+                list-style-type: none;
+                position: absolute;
+                right: 100px;
+                top: 26px;
+                
+            .menu-item{
+                padding-left: 48px;
+                a.menu-link{
+                    text-decoration: none;
+                    font-family: 'IBM Plex Mono', monospace;
+                    color: #060A24;
+                    letter-spacing: 0;
+                    line-height: 28px;
+                        &:hover{
+                            color: #00F3BB;
+                            &:active {
+                                color: #060A24;
+                                opacity:  56%;
+                                text-decoration: line-through;
+                              }
+                        }
+                        
+                    }
+            }
+        }
+       }
+}

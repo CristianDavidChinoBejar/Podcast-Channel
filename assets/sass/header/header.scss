@@ -1,0 +1,115 @@
+header{
+    
+    .title-mobile{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        margin-top: 29px;
+        padding-left: 16px;
+       
+        //background-color: red;
+        
+    }
+
+    .title-desk{
+        display: none;
+    }
+
+    .header-bajada-desk{
+        display: none;
+    }
+
+
+    
+
+    .header-bajada{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin-top: 16px;
+        padding-left: 16px;
+    }
+
+
+    .boton{
+        
+        background-color: #00F3BB;
+        width: 288px;
+        height: 48px;
+        margin: auto;
+        margin-top: 36px;
+        @media (min-width: 321px){
+            background-color: #00F3BB;
+            width: 226px;
+            height: 56px;
+            margin-top: 56px;
+            margin-left: 200px;
+        }
+        p{
+            text-align: center;
+            position: relative;
+            font-weight: 500;
+            font-family: 'IBM Plex Mono', monospace;
+            padding-top: 13px;   
+            @media (min-width: 321px){
+                
+                padding-top: 17px;    
+                font-size: 18px;
+            }    
+        }
+
+        &:hover{
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            p{
+                color: #FFFFFF;
+            }
+        }
+       
+        
+        
+        
+    }  
+    
+    @media (min-width: 321px){
+        .title-mobile{
+            display: none;
+        }
+        .header-bajada{
+            display: none;
+        }
+
+        .header-desk{
+            margin-top: 142px;
+            margin-left: 200px;
+            .title-desk{
+                display: inline;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 64px;
+                color: #060A24;
+                letter-spacing: 0;
+                .tachado{
+                    text-decoration: line-through;
+                }
+                .point-blue{
+                    color: #0000EC;
+                }
+            }
+            .header-bajada-desk{
+                font-family: 'IBM Plex Mono', monospace;
+                display: block;
+                font-size: 16px;
+                color: #060A24;
+                letter-spacing: 0;
+                line-height: 24px;
+            }
+        }
+
+        
+
+    }
+    
+}

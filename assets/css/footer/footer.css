@@ -1,0 +1,29 @@
+footer p {
+  text-align: center;
+  margin-top: 24px;
+  color: #060A24; }
+footer .social-networks {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 63px;
+  padding-right: 63px;
+  margin-top: 16px;
+  margin-bottom: 31px; }
+  footer .social-networks a {
+    color: #060A24; }
+@media (min-width: 321px) {
+  footer {
+    display: flex;
+    justify-content: space-between; }
+    footer p {
+      padding-left: 100px;
+      margin-top: 36px; }
+    footer .social-networks {
+      padding-right: 100px;
+      margin-top: 36px;
+      margin-bottom: 31px; }
+      footer .social-networks a {
+        padding-left: 36px;
+        color: #060A24; } }
+
+/*# sourceMappingURL=footer.css.map */

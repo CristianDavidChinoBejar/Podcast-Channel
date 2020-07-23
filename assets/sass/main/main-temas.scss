@@ -1,0 +1,89 @@
+/* TEMAS SVG */
+
+main{   
+    .temas-svg{  
+        h2{
+            //margin-left: 16px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 36px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 42px;
+            font-weight: 400;
+            margin-top: 48px;
+            padding-left: 16px;
+            .break{
+                display: block;
+            }
+            
+        }
+        @media (min-width: 321px){
+            #topicos{
+                margin-top: 64px;
+                margin-left: 13.9%;
+                .break{
+                    display: inline;
+                }
+            }
+        }
+
+        .iconos{
+            /*
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(4,100%);
+            */
+            div{
+                text-align: center;
+                p{
+                    //margin-left: 16px;
+                    font-size: 24px;
+                    color: #060A24;
+                    letter-spacing: 0;
+                    margin-top: 13px;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-weight: 600;
+                }
+            }
+            .spacing-one{
+                margin-top: 37px;
+            }
+            .spacing-two{
+                margin-top: 49px;
+                .break{
+                    display: block;
+                }
+            }
+            .spacing-three{
+                margin-top: 65px;
+            }
+            .spacing-four{
+                margin-top: 65px;
+            }
+        }
+        @media (min-width: 321px){
+            .iconos{
+                display: flex;
+                justify-content: space-around;
+                padding-left: 167px;
+                padding-right: 167px;
+               .break{
+                   display: block;
+               }
+               .spacing-one{
+                    margin-top: 69px;
+                }
+                .spacing-two{
+                    margin-top: 69px;
+                }
+                .spacing-three{
+                    margin-top: 69px;
+                }
+                .spacing-four{
+                    margin-top: 69px;
+                }
+            }
+        }
+    }
+
+}

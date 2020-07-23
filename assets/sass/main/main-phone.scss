@@ -1,0 +1,84 @@
+
+
+/* CELULAR Z-INDEX */
+main{
+    .container-phone{
+        position: relative;
+        @media (min-width: 321px){
+            display: flex;
+            justify-content: center;
+        }
+        .phone{ 
+            width: 320px;
+            margin-top: -95.5px;
+            @media (min-width: 321px){
+                width: 457.6px;
+                margin-top: -170px;
+                margin-bottom: 64px;
+            }
+        }
+    
+        .letter-phone{
+            padding-left: 16px;
+            @media (min-width: 321px){
+                display: none;
+            }
+            
+            h2{
+                position: relative;
+                //padding-left: 16px;
+                //left: 0px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 36px;
+                color: #060A24;
+                letter-spacing: 0;
+                line-height: 42px;
+                font-weight: 400;
+            }
+            .bajada-phone{
+                //padding-left: 16px;
+                margin-top: 8px;
+                p{
+                    //letra es mas chica, creo q es la tipografia
+                    font-family: 'IBM Plex Mono', monospace;
+                    font-size: 14px;
+                    color: #060A24;
+                    letter-spacing: 0;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+                @media (min-width: 321px){
+                    display: none;
+                }
+            }
+        }
+        .letter-phone-desk{
+            display: none;
+            @media (min-width: 321px){
+                display: inline;
+                h2{
+                    font-size: 48px;
+                    color: #060A24;
+                    letter-spacing: 0;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    padding-left: 62.4px;
+                    margin-top: 48px;
+                }
+            }
+            .bajada-phone-desk{
+                display: none;
+                @media (min-width: 321px){
+                    display: inline;
+                    p{
+                        font-family: 'IBM Plex Mono', monospace;
+                        font-size: 16px;
+                        color: #060A24;
+                        letter-spacing: 0;
+                        line-height: 24px;
+                        padding-left: 62.4px;
+                    }
+                }
+            }
+        }
+    }
+}

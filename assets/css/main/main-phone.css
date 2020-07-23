@@ -1,0 +1,66 @@
+/* CELULAR Z-INDEX */
+main .container-phone {
+  position: relative; }
+  @media (min-width: 321px) {
+    main .container-phone {
+      display: flex;
+      justify-content: center; } }
+  main .container-phone .phone {
+    width: 320px;
+    margin-top: -95.5px; }
+    @media (min-width: 321px) {
+      main .container-phone .phone {
+        width: 457.6px;
+        margin-top: -170px;
+        margin-bottom: 64px; } }
+  main .container-phone .letter-phone {
+    padding-left: 16px; }
+    @media (min-width: 321px) {
+      main .container-phone .letter-phone {
+        display: none; } }
+    main .container-phone .letter-phone h2 {
+      position: relative;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 36px;
+      color: #060A24;
+      letter-spacing: 0;
+      line-height: 42px;
+      font-weight: 400; }
+    main .container-phone .letter-phone .bajada-phone {
+      margin-top: 8px; }
+      main .container-phone .letter-phone .bajada-phone p {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        font-weight: 400; }
+      @media (min-width: 321px) {
+        main .container-phone .letter-phone .bajada-phone {
+          display: none; } }
+  main .container-phone .letter-phone-desk {
+    display: none; }
+    @media (min-width: 321px) {
+      main .container-phone .letter-phone-desk {
+        display: inline; }
+        main .container-phone .letter-phone-desk h2 {
+          font-size: 48px;
+          color: #060A24;
+          letter-spacing: 0;
+          font-family: 'IBM Plex Sans', sans-serif;
+          padding-left: 62.4px;
+          margin-top: 48px; } }
+    main .container-phone .letter-phone-desk .bajada-phone-desk {
+      display: none; }
+      @media (min-width: 321px) {
+        main .container-phone .letter-phone-desk .bajada-phone-desk {
+          display: inline; }
+          main .container-phone .letter-phone-desk .bajada-phone-desk p {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 24px;
+            padding-left: 62.4px; } }
+
+/*# sourceMappingURL=main-phone.css.map */

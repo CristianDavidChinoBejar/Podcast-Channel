@@ -1,0 +1,61 @@
+/* TEMAS SVG */
+main .temas-svg h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  font-weight: 400;
+  margin-top: 48px;
+  padding-left: 16px; }
+  main .temas-svg h2 .break {
+    display: block; }
+@media (min-width: 321px) {
+  main .temas-svg #topicos {
+    margin-top: 64px;
+    margin-left: 13.9%; }
+    main .temas-svg #topicos .break {
+      display: inline; } }
+main .temas-svg .iconos {
+  /*
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4,100%);
+  */ }
+  main .temas-svg .iconos div {
+    text-align: center; }
+    main .temas-svg .iconos div p {
+      font-size: 24px;
+      color: #060A24;
+      letter-spacing: 0;
+      margin-top: 13px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 600; }
+  main .temas-svg .iconos .spacing-one {
+    margin-top: 37px; }
+  main .temas-svg .iconos .spacing-two {
+    margin-top: 49px; }
+    main .temas-svg .iconos .spacing-two .break {
+      display: block; }
+  main .temas-svg .iconos .spacing-three {
+    margin-top: 65px; }
+  main .temas-svg .iconos .spacing-four {
+    margin-top: 65px; }
+@media (min-width: 321px) {
+  main .temas-svg .iconos {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 167px;
+    padding-right: 167px; }
+    main .temas-svg .iconos .break {
+      display: block; }
+    main .temas-svg .iconos .spacing-one {
+      margin-top: 69px; }
+    main .temas-svg .iconos .spacing-two {
+      margin-top: 69px; }
+    main .temas-svg .iconos .spacing-three {
+      margin-top: 69px; }
+    main .temas-svg .iconos .spacing-four {
+      margin-top: 69px; } }
+
+/*# sourceMappingURL=main-temas.css.map */

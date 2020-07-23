@@ -1,0 +1,81 @@
+.menu-navbar {
+  background: #FFFFFF;
+  height: 44px;
+  display: flex;
+  justify-content: space-between; }
+  .menu-navbar .menu-desk {
+    display: none; }
+  .menu-navbar .logo {
+    position: relative;
+    padding: 10px 16px; }
+    @media (min-width: 321px) {
+      .menu-navbar .logo {
+        top: 22px;
+        left: 100px; } }
+  .menu-navbar .fa-bars {
+    padding-right: 19px;
+    padding-top: 14px; }
+    @media (min-width: 321px) {
+      .menu-navbar .fa-bars {
+        display: none; } }
+  .menu-navbar .fa-times {
+    padding-right: 19px;
+    position: relative;
+    top: 16px; }
+    @media (min-width: 321px) {
+      .menu-navbar .fa-times {
+        display: none; } }
+  .menu-navbar #menu-toggle {
+    display: none; }
+    .menu-navbar #menu-toggle:checked + .menu {
+      top: 44px; }
+  .menu-navbar .menu {
+    width: 100%;
+    position: absolute;
+    background-color: blue;
+    left: 0px;
+    top: -250px;
+    list-style-type: none;
+    transition: 0.5s all;
+    padding: 0px; }
+    @media (min-width: 321px) {
+      .menu-navbar .menu {
+        display: none;
+        overflow: hidden; } }
+    .menu-navbar .menu .menu-item {
+      margin: 20.5px 0;
+      padding: 6px 12px; }
+      .menu-navbar .menu .menu-item a.menu-link {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px; }
+  .menu-navbar .fa-times {
+    display: none; }
+  .menu-navbar #menu-toggle:checked + .menu + label .fa-bars {
+    display: none; }
+  .menu-navbar #menu-toggle:checked + .menu + label .fa-times {
+    display: inline; }
+  @media (min-width: 321px) {
+    .menu-navbar .menu-desk {
+      display: flex;
+      list-style-type: none;
+      position: absolute;
+      right: 100px;
+      top: 26px; }
+      .menu-navbar .menu-desk .menu-item {
+        padding-left: 48px; }
+        .menu-navbar .menu-desk .menu-item a.menu-link {
+          text-decoration: none;
+          font-family: 'IBM Plex Mono', monospace;
+          color: #060A24;
+          letter-spacing: 0;
+          line-height: 28px; }
+          .menu-navbar .menu-desk .menu-item a.menu-link:hover {
+            color: #00F3BB; }
+            .menu-navbar .menu-desk .menu-item a.menu-link:hover:active {
+              color: #060A24;
+              opacity: 56%;
+              text-decoration: line-through; } }
+
+/*# sourceMappingURL=navbar.css.map */
